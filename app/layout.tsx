@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`max-w-4xl mx-auto ${vollkorn.className} antialiased py-9 px-4`}>
+      <body className={`max-w-4xl mx-auto ${vollkorn.className} antialiased py-9 px-3`}>
         <Header />
         {children}
       </body>

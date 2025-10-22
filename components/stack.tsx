@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/ui/marquee";
+import Image from "next/image";
 
 const stack = [
     "JS",
@@ -19,6 +20,11 @@ const stack = [
     "Postman",
     "Strapi",
     "Radix",
+    "ReactRouter",
+    "TailwindCSS",
+    "Sass",
+    "Figma",
+    "Pocketbase"
 ]
 
 const ReviewCard = ({ name }: { name: string }) => {
@@ -33,7 +39,10 @@ const ReviewCard = ({ name }: { name: string }) => {
             )}
         >
             <div className="flex flex-row items-center gap-2">
-                <img className="grayscale-75 hover:grayscale-25 hover:scale-110 transition-all" width="52" height="52" alt="" src={`/techs/${name}.png`} />
+                <Image className="grayscale-75 hover:grayscale-25 hover:scale-110 transition-all"
+                    src={`/techs/${name}.png`}
+                    width="52" height="52" alt={`${name} logo`}
+                />
             </div>
         </figure>
     );
