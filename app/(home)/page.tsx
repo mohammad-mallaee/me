@@ -27,7 +27,7 @@ export default async function Page() {
         </div>
       </div>
       <p className="mt-8 text-gray-400">
-        Did you just say &quot;What does Aristeia mean&quot; ? &nbsp;
+        &quot;What does Aristeia mean?&quot; I hear you ask. &nbsp;
         <Link
           className="text-slate-400 underline"
           href={"https://en.wikipedia.org/wiki/Aristeia"}
@@ -102,10 +102,10 @@ export default async function Page() {
             </Link>
           </h3>
           <p className="text-gray-300 mb-4">
-            Dunijet is a Persian-language online programming education platform
-            built around project-based, market-ready learning. It offers
-            in-depth courses in Flutter, Android (Kotlin), and N8N workflow
-            automation and an active Telegram community.
+            An online programming education platform built around project-based,
+            market-ready learning. It offers in-depth courses in Flutter,
+            Android (Kotlin), and N8N workflow automation and an active Telegram
+            community.
           </p>
           <div className="flex flex-wrap gap-2 text-sm">
             {[
@@ -128,10 +128,10 @@ export default async function Page() {
         <div className="mt-6 rounded-xl p-6 bg-[#0e0e12] border border-[#212127]">
           <h3 className="text-xl font-bold mb-2">Fusion</h3>
           <p className="text-gray-300 mb-5">
-            Fusion is a command-line tool designed to streamline the process of
-            keeping your computer and Android device in sync. It offers a
-            user-friendly interface and efficient functionality to make file
-            transfers and synchronization a breeze.
+            A command-line tool designed to streamline the process of keeping
+            your computer and Android device in sync. It offers a user-friendly
+            interface and efficient functionality to make file transfers and
+            synchronization a breeze.
             <Link
               className=" text-slate-400 underline underline-offset-2 mx-2"
               href="https://github.com/mohammad-mallaee/fusion"
@@ -159,9 +159,9 @@ export default async function Page() {
         <div className="mt-6 rounded-xl p-6 bg-[#0e0e12] border border-[#212127]">
           <h3 className="text-xl font-bold mb-2">Flow — Tab Manager</h3>
           <p className="text-gray-300 mb-5">
-            Flow is a powerful tab manger extension for Google Chrome and
-            Firefox that helps you organize and manage your browser tabs more
-            efficiently. I was the UI/UX designer of this project.
+            A powerful tab manger extension for Google Chrome and Firefox that
+            helps you organize and manage your browser tabs more efficiently. I
+            was the UI/UX designer of this project.
             <Link
               className=" text-slate-400 underline underline-offset-2 mx-2"
               href="https://chromewebstore.google.com/detail/flow-tab-manager/ddmmamibgihlgejeklfopeebcnobmfeb"
