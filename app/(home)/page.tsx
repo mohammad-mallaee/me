@@ -113,7 +113,7 @@ export default async function Page() {
               "Strapi CMS",
               "TypeScript",
               "TailwindCSS",
-              "REST APIs",
+              "Shadcn UI",
             ].map((tag) => (
               <span
                 key={tag}
