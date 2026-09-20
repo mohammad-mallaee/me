@@ -27,6 +27,8 @@ const stack = [
     "Pocketbase"
 ]
 
+const reversedStack = [...stack].reverse();
+
 const ReviewCard = ({ name }: { name: string }) => {
     return (
         <figure
@@ -53,12 +55,12 @@ export function MarqueeDemo() {
         <div className="relative flex w-full flex-col items-center justify-center overflow-hidden mt-16">
             <h2 className="text-2xl font-bold mb-2">My Tech Stack</h2>
             <Marquee className="[--duration:50s]">
-                {stack.sort(() => Math.random() - 0.5).map((review) => (
+                {stack.map((review) => (
                     <ReviewCard key={review} name={review} />
                 ))}
             </Marquee>
             <Marquee reverse className="[--duration:50s]">
-                {stack.sort(() => Math.random() - 0.5).map((review) => (
+                {reversedStack.map((review) => (
                     <ReviewCard key={review} name={review} />
                 ))}
             </Marquee>

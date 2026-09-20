@@ -7,6 +7,7 @@ import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 
 const MOVEMENT_DAMPING = 1400;
+const PHI = -40;
 
 export const GLOBE_CONFIG: COBEOptions = {
   width: 600,
@@ -34,8 +35,7 @@ export function Globe({
   className?: string;
   config?: COBEOptions;
 }) {
-  const phi = -40;
-  let width = 0;
+  const width = useRef(0);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pointerInteracting = useRef<number | null>(null);
   const pointerInteractionMovement = useRef(0);
@@ -65,7 +65,7 @@ export function Globe({
   useEffect(() => {
     const onResize = () => {
       if (canvasRef.current) {
-        width = canvasRef.current.offsetWidth;
+        width.current = canvasRef.current.offsetWidth;
       }
     };
 
@@ -74,12 +74,12 @@ export function Globe({
 
     const globe = createGlobe(canvasRef.current!, {
       ...config,
-      width: width * 2,
-      height: width * 2,
+      width: width.current * 2,
+      height: width.current * 2,
       onRender: (state) => {
-        state.phi = phi + rs.get();
-        state.width = width * 2;
-        state.height = width * 2;
+        state.phi = PHI + rs.get();
+        state.width = width.current * 2;
+        state.height = width.current * 2;
       },
     });
 
